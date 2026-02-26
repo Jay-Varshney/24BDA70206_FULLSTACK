@@ -146,6 +146,115 @@
 
     </main>
 
+    <div class="container profile-section">
+        <div class="form-container">
+            <h3>Optimize Your Job Search</h3>
+            <p>Fill in your details to create a dynamic profile.</p>
+            <form id="jobSearchForm">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label for="targetRole">Target Job Role</label>
+                    <input type="text" id="targetRole" placeholder="Frontend Developer" required>
+                </div>
+                <div class="form-group">
+                    <label for="location">Preferred Location</label>
+                    <input type="text" id="location" placeholder="Bengaluru, Remote" required>
+                </div>
+                <div class="form-group">
+                    <label for="salary">Expected Salary</label>
+                    <input type="text" id="salary" placeholder="₹12–18 LPA" required>
+                </div>
+                <div class="form-group">
+                    <label for="skills">Key Skills (comma separated)</label>
+                    <input type="text" id="skills" placeholder="React, CSS, JavaScript" required>
+                </div>
+                <button type="submit" class="btn-primary update-btn">Update Profile</button>
+            </form>
+        </div>
+
+        <div class="profile-card" id="profileCard">
+            <div class="profile-header">
+                <div class="profile-img" id="profileImgLetter">J</div>
+                <div class="profile-main-info">
+                    <h2 id="displayFullName">John Doe</h2>
+                    <p id="displayRole">Frontend Developer</p>
+                </div>
+            </div>
+            <div class="profile-details">
+                <div class="profile-item">
+                    <i class="fas fa-location-dot"></i>
+                    <span id="displayLocation">Location Preference</span>
+                </div>
+                <div class="profile-item">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <span id="displaySalary">Expected Salary</span>
+                </div>
+                <div class="profile-skills" id="displaySkills">
+                    <!-- Skills will be added here -->
+                    <span class="skill-tag">Skills</span>
+                </div>
+            </div>
+            <div class="profile-status">
+                <span class="status-badge">Available for Hire</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Job Posting Section -->
+    <div class="container job-posting-section">
+        <div class="form-container">
+            <h3>Post a New Opportunity</h3>
+            <p>Fill in the details to reach over 2,400+ active job seekers.</p>
+            <form id="jobPostingForm">
+                <div class="form-group grid-2">
+                    <div>
+                        <label for="jobTitle">Job Title</label>
+                        <input type="text" id="jobTitle" placeholder="e.g. Senior Backend Engineer" required>
+                    </div>
+                    <div>
+                        <label for="compName">Company Name</label>
+                        <input type="text" id="compName" placeholder="e.g. Google" required>
+                    </div>
+                </div>
+                <div class="form-group grid-2">
+                    <div>
+                        <label for="jobLoc">Location</label>
+                        <input type="text" id="jobLoc" placeholder="e.g. Remote or Bengaluru" required>
+                    </div>
+                    <div>
+                        <label for="jobSal">Salary Range</label>
+                        <input type="text" id="jobSal" placeholder="e.g. ₹15–25 LPA" required>
+                    </div>
+                </div>
+                <div class="form-group grid-2">
+                    <div>
+                        <label for="jobType">Job Type</label>
+                        <select id="jobType" class="form-select" required>
+                            <option value="remote">Remote</option>
+                            <option value="full">Full Time</option>
+                            <option value="onsite">Onsite</option>
+                            <option value="contract">Contract</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="compInitial">Company Initial (for Logo)</label>
+                        <input type="text" id="compInitial" maxlength="1" placeholder="G" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn-primary post-btn">Post Job Opportunity</button>
+            </form>
+        </div>
+    </div>
+
+        </div>
+
+    </main>
+
+    <script src="jobPage.js"></script>
+
 </body>
 
 </html>
