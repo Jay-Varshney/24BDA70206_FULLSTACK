@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.navbar {
+    background-color: white;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.logo-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-icon {
+    background-color: #4f46e5;
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.highlight {
+    color: #4f46e5;
+}
+
+.nav-links a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: #64748b;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: #4f46e5;
+    text-decoration: underline;
+}
+
+.btn-primary {
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn-text {
+    background-color: transparent;
+    border: none;
+    margin-right: 10px;
+    color: #64748b;
+    cursor: pointer;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 0;
+    background-color: #eef2ff;
+}
+
+.promo-badge {
+    background-color: #e0e7ff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    color: #4f46e5;
+    font-weight: bold;
+}
+
+.hero-title {
+    font-size: 42px;
+    margin: 20px 0;
+}
+
+.gradient-text {
+    color: #4f46e5;
+}
+
+.search-bar {
+    display: flex;
+    gap: 10px;
+    max-width: 750px;
+    margin: 30px auto 0;
+}
+
+.input-box {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 0 12px;
+}
+
+.input-box i {
+    color: #4f46e5;
+    margin-right: 8px;
+}
+
+.input-box input {
+    border: none;
+    outline: none;
+    padding: 14px 0;
+    width: 100%;
+}
+
+.btn-search {
+    padding: 14px 24px;
+    border-radius: 12px;
+    border: none;
+    background-color: #4f46e5;
+    color: white;
+    cursor: pointer;
+}
+
+.main-content {
+    padding: 80px 0;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 40px;
+}
+
+.filter-chip {
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    background-color: white;
+    cursor: pointer;
+    color: #64748b;
+}
+
+.filter-chip.active {
+    background-color: #4f46e5;
+    color: white;
+}
+
+.job-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.job-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 20px;
+    border: 1px solid #e2e8f0;
+}
+
+.job-card:hover {
+    transition: 0.3s;
+    transform: translateY(-8px);
+}
+
+.job-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.company-logo {
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    background-color: #4f46e5;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.job-type {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.remote {
+    background-color: #dcfce7;
+    color: #166534;
+}
+
+.full {
+    background-color: #e0e7ff;
+    color: #4f46e5;
+}
+
+.job-card h3 {
+    margin: 15px 0 5px;
+}
+
+.company {
+    color: #64748b;
+    margin-bottom: 15px;
+}
+
+.job-info {
+    display: flex;
+    justify-content: space-between;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.job-footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.salary {
+    font-weight: bold;
+}
+
+.apply-btn {
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+}
