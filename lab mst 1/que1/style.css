@@ -1,0 +1,48 @@
+body {
+    background-color: #eeeeee;
+    font-family: sans-serif;
+    padding: 50px;
+}
+
+.container {
+    background: #ffffff;
+    padding: 20px;
+    width: 300px;
+    margin: auto;
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    margin-top: 5px;
+    border: 1px solid grey;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+button {
+    width: 100%;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: darkblue;
+}

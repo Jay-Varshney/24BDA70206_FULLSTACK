@@ -14,7 +14,7 @@ document.getElementById('jobSearchForm').addEventListener('submit', function(e) 
     document.getElementById('displayRole').innerText = targetRole;
     document.getElementById('displayLocation').innerText = location;
     document.getElementById('displaySalary').innerText = salary;
-    document.getElementById('profileImgLetter').innerText = fullName.charAt(0).toUpperCase();
+    document.getElementById('profileImgLetter').innerText = fullName;
 
     // Update skills
     const skillsContainer = document.getElementById('displaySkills');
@@ -25,12 +25,6 @@ document.getElementById('jobSearchForm').addEventListener('submit', function(e) 
         span.innerText = skill;
         skillsContainer.appendChild(span);
     });
-
-    // Trigger animation
-    const profileCard = document.getElementById('profileCard');
-    profileCard.style.animation = 'none';
-    profileCard.offsetHeight; // trigger reflow
-    profileCard.style.animation = 'pulse 0.5s ease-in-out';
 });
 
 // Job Posting Handling
@@ -74,7 +68,4 @@ document.getElementById('jobPostingForm').addEventListener('submit', function(e)
 
     // Reset form
     this.reset();
-
-    // Optional: Scroll to the new card
-    jobCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
 });

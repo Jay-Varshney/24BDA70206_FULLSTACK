@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card">
+        <h2>My List</h2>
+        
+        <div class="controls">
+            <input type="text" id="itemInput" placeholder="Enter item...">
+            <button onclick="addItem()" class="add-btn">Add</button>
+            <button onclick="removeItem()" class="remove-btn">Remove Last</button>
+        </div>
+
+        <ul id="myList"></ul>
+    </div>
+
+    <script>
+        function addItem() {
+            const input = document.getElementById('itemInput');
+            if (input.value.trim() !== "") {
+                const li = document.createElement('li');
+                li.textContent = input.value;
+                document.getElementById('myList').appendChild(li);
+                input.value = ""; 
+            }
+        }
+
+        function removeItem() {
+            const list = document.getElementById('myList');
+            if (list.children.length > 0) {
+                list.lastElementChild.remove();
+            }
+        }
+    </script>
+</body>
+</html>
