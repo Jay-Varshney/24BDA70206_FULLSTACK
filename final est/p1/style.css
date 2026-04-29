@@ -1,0 +1,65 @@
+/* Page Setup */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Centering the form box on the page */
+.container {
+    width: 450px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 2px solid #333333;
+}
+
+/* Spacing out the rows */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Making labels sit on their own line */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Standardizing input appearance */
+input[type="text"], 
+input[type="email"], 
+select {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid #777777;
+}
+
+/* Button Basics */
+button {
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+}
+
+/* Submit Button Colors 
+*/
+.btn-submit {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Hover effect: The button changes color when the mouse is over it */
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+/* Reset Button Colors */
+.btn-reset {
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-reset:hover {
+    background-color: #4a5057;
+}
